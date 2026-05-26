@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moja prva stranica</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <!--HEADER-->
+    <header class="header">
+        <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img srcset="images/Ikonice.assignment03/black_modern_MS_logo.png,
+                images/Ikonice.assignment03/black_modern_MS_logo_1024.png,
+                images/Ikonice.assignment03/black_modern_MS_logo_768.png"
+                sizes="(max-width:1900px) 1900px,
+                (max-width:1024px) 1024px,
+                (max-width:768px) 768px" src="images/Ikonice.assignment03/black_modern_MS_logo.png" alt="logo sajta"></a>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#sale" class="sale">Sale!</a></li>
+            </ul>
+        </div>
+        <div class="header-right">
+            <div class="search">
+                <img src="images/Ikonice.assignment03/search_icon.png" alt="search icon">
+                <span>Search</span>
+            </div>
+            <span class="icons"><a href="checkout.html" onclick="prikaziIznos()"><img src="images/Ikonice.assignment03/cart_logo.png" alt="ikonica za kupovinu"></a></span>
+            <span class="icons"><a href="login.html"><img src="images/Ikonice.assignment03/user_logo.png" alt="user ikonica"></a></span>
+
+        </div>
+        </div>
+    </header>
+    <!--KRAJ HEADERA-->
+    <div class="breadcrumbs">
+        <span class="crumb">Home</span>
+        <span class="crumb-sep">›</span>
+        <span class="crumb">Shop</span>
+        <span class="crumb-sep">›</span>
+        <span class="crumb">View All</span>
+    </div>
+
+    <!--NASLOV-->
+    <h1 class="naslov">View All Products</h1>
+
+    <!--MAIN GRID-->
+    <section class="shop">
+        <!-- FILTERI -->
+        <aside class="filters">
+            <h3>Filters</h3>
+
+             <div class="filter-group">
+            <h4>Price</h4>
+            <label><input type="checkbox"> $0 - $50</label>
+            <label><input type="checkbox"> $50 - $100</label>
+        </div>
+
+        <div class="filter-group">
+            <h4>Brand</h4>
+            <label><input type="checkbox"> Zara</label>
+            <label><input type="checkbox"> H&M</label>
+            <label><input type="checkbox"> Bershka</label>
+            <label><input type="checkbox"> Koton</label>
+        </div>
+
+        <div class="filter-group">
+            <h4>Categories</h4>
+            <label><input type="checkbox"> Fleece</label>
+            <label><input type="checkbox"> Sweaters</label>
+            <label><input type="checkbox"> Shirts</label>
+            <label><input type="checkbox"> T-Shirts</label>
+        </div>
+
+        <div class="filter-group">
+            <h4>Collection</h4>
+            <label><input type="checkbox"> Spring / Summer</label>
+            <label><input type="checkbox"> Autumn / Winter</label>
+        </div>
+
+        <button class="apply-btn">Apply Filters</button>
+    </aside>
+
+        <!-- PROIZVODI -->
+        <div class="products">
+            <div class="products-header">
+                <p>Showing 13–24 of 312 Products</p>
+                <p>Sort by: <strong>Most Popular</strong></p>
+            </div>
+
+            <div class="products-grid">
+
+                <!-- CARD -->
+                <div class="product-card">
+                    <img src="images/Ikonice.assignment03/blazer.webp" alt="blazer">
+                    <h5>Blazer</h5>
+                    <p class="price">$95</p>
+                    <button onclick="dodajNaIznos(95)">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/Ikonice.assignment03/midi_coat.webp" alt="midi coat">
+                    <h5>Midi Coat</h5>
+                    <p class="price">$105</p>
+                    <button onclick="dodajNaIznos(105)">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/Ikonice.assignment03/high_waisted_trousers.webp" alt="high waisted trousers">
+                    <h5>High Waisted Trousers</h5>
+                    <p class="price">$100</p>
+                    <button onclick="dodajNaIznos(100)">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/Ikonice.assignment03/retro_jeans.webp" alt="retro jeans">
+                    <h5>Retro jeans</h5>
+                    <p class="price">$70</p>
+                    <button onclick="dodajNaIznos(70)">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/Ikonice.assignment03/belted_coat.jpg" alt="belted coat">
+                    <h5>Belted coat</h5>
+                    <p class="price">$72</p>
+                    <button onclick="dodajNaIznos(72)">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/Ikonice.assignment03/denim_shirt.jpg" alt="denim shirt">
+                    <h5>Denim Shirt</h5>
+                    <p class="price">$50</p>
+                    <button onclick="dodajNaIznos(50)">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/Ikonice.assignment03/sweater.jpg" alt="sweater">
+                    <h5>Chunky Knit Sweater</h5>
+                    <p class="price">$55</p>
+                    <button onclick="dodajNaIznos(55)">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/Ikonice.assignment03/belted_coat.jpg" alt="belted coat">
+                    <h5>Belted coat</h5>
+                    <p class="price">$95</p>
+                    <button onclick="dodajNaIznos(95)">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/Ikonice.assignment03/elegant_trousers.jpg" alt="elegant trousers">
+                    <h5>Elegant Trousers</h5>
+                    <p class="price">$27</p>
+                    <button onclick="dodajNaIznos(27)">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/Ikonice.assignment03/high_waisted_trousers.webp" alt="high waisted trousers">
+                    <h5>High waisted trousers</h5>
+                    <p class="price">$30</p>
+                    <button onclick="dodajNaIznos(30)">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/Ikonice.assignment03/blazer.webp" alt="blazer">
+                    <h5>Blazer</h5>
+                    <p class="price">$60</p>
+                    <button onclick="dodajNaIznos(60)">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/Ikonice.assignment03/midi_coat.webp" alt="midi coat">
+                    <h5>Midi Coat</h5>
+                    <p class="price">$110</p>
+                    <button onclick="dodajNaIznos(110)">Add to Cart</button>
+                </div>
+
+            </div>
+             <!-- PAGINATION -->
+        <div class="pagination">
+            <button>Back</button>
+            <span class="active">1</span>
+            <span>2</span>
+            <span>3</span>
+            <button>Next</button>
+        </div>
+
+
+        </div>
+
+    </section>
+    <!--KRAJ MAINA-->
+    <div class="newsletter">
+            <div class="newsletter-text">
+                <h2>STAY UP TO DATE ABOUT<br>OUR BEST OFFERS!</h2>
+            </div>
+
+            <div class="newsletter-form">
+                <input type="email" placeholder="Enter your email address...">
+                <button>Subscribe to Newsletter</button>
+            </div>
+        </div>
+
+    <!--FOOTER-->
+    <footer class="footer">
+        
+        <div class="footer-wrap">
+        <div class="footer-links">
+            <div class="footer-column">
+                <h3>SHOP</h3>
+                <ul>
+                    <li>Dresses</li>
+                    <li>Jackets</li>
+                    <li>Skirts</li>
+                    <li>Shoes &amp; Bags</li>
+                    <li>Gift Cards</li>
+                    <li>Sales &amp; Offers</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>INFORMATION</h3>
+                <ul>
+                    <li>About</li>
+                    <li>Terms and Conditions</li>
+                    <li>Privacy Policy</li>
+                    <li>Delivery and Return</li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>CUSTOMER SUPPORT</h3>
+                <ul>
+                    <li>Contact</li>
+                    <li>Help</li>
+                    <li>FAQ</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Designed and developed by: <strong>ITAcademy</strong></p>
+
+            <div class="social-icons">
+                <span><img src="images/Ikonice.assignment03/facebook.png"
+                        alt="ikonica facebook"></span>
+                <span><img src="images/Ikonice.assignment03/instagram.png"
+                        alt="ikonica instagram"></span>
+                <span><img src="images/Ikonice.assignment03/tik-tok.png"
+                        alt="ikonica tik-tok"></span>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+    <!--KRAJ FOOTERA-->
+
+
+
+    
+</body>
+
+</html>

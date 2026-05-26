@@ -1,0 +1,80 @@
+.login-box {
+    width: 60%;
+    margin: 0 auto 50px auto;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 45px;
+}
+
+.login-box label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 1rem;
+}
+
+.login-box input[type="email"],
+.login-box input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    border-radius: 6px;
+     box-sizing: border-box;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    font-size: 1.2rem;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    
+}
+
+.forgot {
+    color: #999;
+    text-decoration: none;
+}
+
+.forgot:hover {
+    text-decoration: underline;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #111;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #333;
+}
+
+.create {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+.create a {
+    color: #000;
+}
+p {
+    font-size: 1rem;
+}
+
+button {
+    font-size: 1rem;
+}

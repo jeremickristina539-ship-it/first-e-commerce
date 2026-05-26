@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/loginStyle.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <!--HEADER-->
+    <header class="header">
+        <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img srcset="images/Ikonice.assignment03/black_modern_MS_logo.png,
+                images/Ikonice.assignment03/black_modern_MS_logo_1024.png,
+                images/Ikonice.assignment03/black_modern_MS_logo_768.png"
+                sizes="(max-width:1900px) 1900px,
+                (max-width:1024px) 1024px,
+                (max-width:768px) 768px" src="images/Ikonice.assignment03/black_modern_MS_logo.png" alt="logo sajta"></a>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#sale" class="sale">Sale!</a></li>
+            </ul>
+        </div>
+        <div class="header-right">
+            <div class="search">
+                <img src="images/Ikonice.assignment03/search_icon.png" alt="search icon">
+                <span>Search</span>
+            </div>
+            <span class="icons"><a href="checkout.html"><img src="images/Ikonice.assignment03/cart_logo.png" alt="ikonica za kupovinu"></a></span>
+            <span class="icons"><a href="login.html"><img src="images/Ikonice.assignment03/user_logo.png" alt="user ikonica"></a></span>
+
+        </div>
+        </div>
+    </header>
+    <!--KRAJ HEADERA-->
+    <div class="breadcrumbs">
+        <span class="crumb">Home</span>
+        <span class="crumb-sep">›</span>
+        <span class="crumb">Login</span>
+        
+    </div>
+
+    <!--NASLOV-->
+    <h1 class="naslov">Login</h1>
+
+    <div class="login-box">
+        <form>
+            <label for="email">Email</label>
+            <input type="email" id="email">
+
+            <label for="password">Password</label>
+            <input type="password" id="password">
+
+            <div class="options">
+                <label class="remember">
+                    <input type="checkbox">
+                    Remember me
+                </label>
+                <a href="#" class="forgot">Forgot password?</a>
+            </div>
+
+            <button type="button" onclick="testLogin()">LOGIN</button>
+
+            <p class="create">
+                Or <a href="#">Create an Account</a>
+            </p>
+        </form>
+    </div>
+
+
+    <!--FOOTER-->
+    <footer class="footer">
+        <div class="footer-wrap">
+        <div class="footer-links">
+
+            <div class="footer-column">
+                <h3>SHOP</h3>
+                <ul>
+                    <li>Dresses</li>
+                    <li>Jackets</li>
+                    <li>Skirts</li>
+                    <li>Shoes &amp; Bags</li>
+                    <li>Gift Cards</li>
+                    <li>Sales &amp; Offers</li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>INFORMATION</h3>
+                <ul>
+                    <li>About</li>
+                    <li>Terms and Conditions</li>
+                    <li>Privacy Policy</li>
+                    <li>Delivery and Return</li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>CUSTOMER SUPPORT</h3>
+                <ul>
+                    <li>Contact</li>
+                    <li>Help</li>
+                    <li>FAQ</li>
+                </ul>
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+            <p>Designed and developed by: <strong>ITAcademy</strong></p>
+
+            <div class="social-icons">
+                <span><img src="images/Ikonice.assignment03/facebook.png"
+                        alt="ikonica facebook"></span>
+                <span><img src="images/Ikonice.assignment03/instagram.png"
+                        alt="ikonica instagram"></span>
+                <span><img src="images/Ikonice.assignment03/tik-tok.png"
+                        alt="ikonica tik-tok"></span>
+            </div>
+        </div>
+        </div>
+
+    </footer>
+
+    <!--KRAJ FOOTERA-->
+</body>
+</html>

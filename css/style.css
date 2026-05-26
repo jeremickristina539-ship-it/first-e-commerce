@@ -1,0 +1,549 @@
+/**{
+    outline: 1px solid red;
+}*/
+img{
+    max-width: 100%;
+}
+body{
+    font-family: 'Times New Roman', Times, serif, Geneva, Tahoma, sans-serif ;
+    margin: 0px;
+    font-size: 1rem;
+    
+}
+
+  
+
+/*NAVIGACIJA*/
+.header{
+    width: 100%;
+    height: 70px;
+    background-color:#F5EDE4;
+    padding: 0;
+    border-bottom: 1px black solid;
+    align-items: center;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    height: 70px;
+    gap: 20px;
+}
+.logo img{
+    height: 70px;
+}
+.nav ul li{
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+.nav ul li a{
+    text-decoration: none;
+    color:black;
+}
+.nav{
+    flex: 1 1 auto;
+}
+.nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 40px;
+}
+.nav a.sale{
+    color: red;
+
+}
+/*#search{
+    text-align: right;
+    background-color: #F5EDE4;
+    border-radius: 10px;
+    height: 40px;
+    width: 300px;
+    padding-right: 10px;
+    margin-right: 120px;
+    vertical-align: middle;
+}*/
+.search{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.search img{
+    width: 20px;
+    height: 20px;
+}
+.header-right{
+    display: flex;
+    align-items: center;
+    gap: 20px;  
+}
+.header-right span{
+    cursor: pointer;
+}
+.header-right .icons img{
+    height: 40px;
+    width: 40px;
+}
+
+
+/*BREADCRUMBS*/
+.breadcrumbs {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+    color: #999;
+    font-size: 1rem;
+}
+
+
+.crumb {
+    cursor: pointer;
+}
+
+.crumb-sep {
+    margin: 0 10px;
+}
+/*NASLOV STRANICE*/
+.naslov{
+    text-align: center;
+    margin: 40px auto;
+    letter-spacing: 1.5px;
+    font-size: 2.5rem;
+    
+}
+/*MAIN GRID*/
+.shop{
+    width: 85%;
+    margin: 40px auto;
+    overflow: hidden;
+    
+    display: flex;
+    align-items: stretch;
+    gap: 50px;
+
+}
+
+/* FILTERI */
+.filters{
+    width: 12%;
+    float: left;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 80px;
+    
+}
+.filters h3{
+    margin-bottom: 20px;
+}
+.filter-group{
+    margin-bottom: 20px;
+}
+
+.filter-group h4{
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.filter-group label{
+    display: block;
+    margin-bottom: 6px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.apply-btn{
+    width: 100%;
+    padding: 10px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 150px;
+}
+
+/* DESNA STRANA */
+.products{
+    width: 75%;
+    float: right;
+}
+
+/* GORNJI RED */
+.products-header{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 25px;
+}
+
+/* GRID */
+.products-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-right: 30px;
+    /*border-bottom: solid black 1px;*/
+}
+
+/* CARD */
+.product-card{
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    /*width: 275px;*/
+    width: 90%;
+}
+
+.product-card img{
+    width: 100%;
+    height: 300px;
+    margin-bottom: 12px;
+}
+
+.product-card h5{
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.price{
+    font-weight: bold;
+    margin: 5px 0 10px;
+}
+.product-card button{
+    width: 100%;
+    padding: 8px 14px;
+    border: 1px solid #000;
+    background: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+/* PAGINATION */
+.pagination{
+    margin: 50px auto;
+    text-align: center;
+}
+.pagination span,
+.pagination button{
+    padding: 8px 14px;
+    border: 1px solid #ddd;
+    background: white;
+    margin: 0 4px;
+    cursor: pointer;
+}
+.pagination .active{
+    background: black;
+    color: white;
+}
+/*FOOTER*/
+.footer {
+    width: 100%;
+    background-color: #f9f7f4;
+    color: #111;
+    clear: both;
+}
+.newsletter {
+    background-color: #e9dfd6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 80px;
+}
+.newsletter-text h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.newsletter-form input {
+    width: 420px;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+.newsletter-form button {
+    padding: 15px;
+    border: solid 1px black;
+    border-radius: 8px;
+    background-color: #111;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+.newsletter-form button:hover {
+    background-color: #333;
+}
+
+
+
+.footer-wrap {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 60px 20px 30px;
+}
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.footer-column h3 {
+    font-size: 1rem;
+    margin-bottom: 18px;
+    font-weight: 700;
+}
+.footer-column ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+.footer-column ul li {
+    margin-bottom: 10px;
+    color: #888;
+    cursor: pointer;
+}
+.footer-column ul li:hover {
+    color: #111;
+}
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 80px;
+    border-top: 1px solid #ddd;
+}
+.footer-bottom p {
+    font-size: 1rem;
+}
+.social-icons span img{
+    height: 35px;
+    width: 35px;
+    margin-left: 12px;
+}
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+     .products-grid{
+        grid-template-columns: repeat(4, 1fr);
+    
+    }
+    
+
+}
+@media screen and (max-width:1024px){
+    .logo{
+        margin-left: 0px;
+    }
+    .header-right .icons img{
+        margin-right: 0;
+    }
+    h2, h3{
+        font-size: 1.5rem;
+    }
+    p, label{
+        font-size: 1.1rem;
+    }
+    .nav ul li {
+        margin-right: 25px;
+        font-size: 1rem;
+    }
+    #search {
+        width: 200px;
+        margin-right: 20px;
+    }
+    .products-header p{
+        font-size: 1rem;
+    }
+    .filters {
+        margin-left: 0;
+    }
+    .filter-group h4{ 
+        font-size: 1rem;
+    }
+    .filters h3{ 
+        font-size: 1.3rem;
+    }
+    .filter-group label{ 
+        font-size: 1rem;
+    }
+    .footer-links {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .apply-btn {
+        margin-top: 40px;
+    }
+    .products-grid {
+        grid-template-columns: repeat(3, 1fr);
+        margin-right: 10px;
+    }
+    .newsletter {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+    .newsletter-form input {
+        width: 100%;
+    }
+
+
+    /*.container {
+        width: 90%;
+        flex-direction: column;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.4rem;
+    }
+    .title {
+        font-size: 2rem;
+    }
+    .left {
+        width: 58%;
+    }
+    .right {
+        width: 38%;
+    }
+    .pay-btn {
+        font-size: 1.1rem;
+    }*/
+}
+
+@media screen and (max-width:768px){
+    
+    .nav{
+        display: none;
+    }
+    .breadcrumbs {
+        display: none;
+       
+    }
+    .header-right{
+        margin-left: 0;
+    }
+    .header-right .icons img{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #search {
+        margin-right: 0;
+        margin-left: 0;
+        width:55%;
+    }
+    .naslov {
+        font-size: 1.8rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    .filters{
+        display: none;
+    }
+    .products{
+        margin-left: 40px;
+    }
+    .products-header p{
+        font-size: 0.8rem;
+    }
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-card {
+        width: 100%;
+    }
+    .product-card img {
+        height: auto;
+    }
+    .product-card button {
+        font-size: 1.1rem;
+        padding: 12px;
+    }
+    .price {
+        font-size: 1.6rem;
+    }
+
+    .newsletter-text h2 {
+        font-size: 1.5rem;
+    }
+    .newsletter-form button {
+        font-size: 1rem;
+    }
+    .footer-links {
+         grid-template-columns:1fr;
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    /*h1 {
+        font-size: 1.8rem;
+    }
+    
+    
+    p, label {
+        font-size: 1rem;
+    }
+    .container {
+        max-width: 100%;
+        padding: 0 10px;
+        flex-direction: column;
+    }
+    .left,
+    .right {
+        width: 100% !important;
+        max-width: 100%;
+        float: none;
+    }
+    
+    .row {
+        flex-direction: column;
+    }
+    .container input, select {
+        font-size: 1rem;
+        padding: 12px;
+    }
+    .pay-btn {
+        font-size: 1.2rem;
+        padding: 16px;
+    }
+    .payment-method button {
+        font-size: 1rem;
+        padding: 14px;
+    }
+    .item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .item strong {
+        font-size: 1.2rem;
+        margin-top: 5px;
+    }
+    .total {
+        font-size: 1.2rem;
+    }*/
+    
+
+
+}

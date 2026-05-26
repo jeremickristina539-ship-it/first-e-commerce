@@ -1,0 +1,267 @@
+/*MAIN*/
+.container {
+    /*width: 2000px;
+    margin: auto;*/
+    max-width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.left {
+    width: 60%;
+    /*float: left;*/
+}
+
+.right {
+    width: 35%;
+    /*float: right;*/
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+.box {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+.row {
+    display: flex;
+    gap: 15px;
+}
+
+.field {
+    width: 100%;
+    margin-bottom: 15px;
+}
+label {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.container input, select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+    width: auto;
+    padding: 0;
+    margin: 0;
+    transform: scale(1.4);
+    margin-right: 8px;
+}
+
+.checkbox label{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1rem;
+}
+
+
+.payment-method {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.payment-method button {
+    flex: 1;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.paypal {
+    background: #fff;
+}
+.paypal img {
+    height: 22px;
+    display: block;
+    margin: auto;
+}
+
+.cash {
+    background: #000;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.pay-btn {
+    width: 100%;
+    padding: 14px;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 25px;
+}
+
+.cart {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    border-bottom:  1px solid #ddd;
+}
+
+.item img {
+    width: 60px;
+    border-radius: 6px;
+    margin-bottom: 5px;
+}
+
+.info {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.info span {
+    font-size: 13px;
+    color: #777;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+    margin-top: 30px;
+    font-size: 1rem;
+}
+.summary-box{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.discount-row{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+.discount-field:first-child {
+    flex: 3;
+    
+}
+#promo-input{
+    text-align: center;
+}
+
+.discount-field:last-child {
+    flex: 1;
+}
+.apply {
+    width: 100%;
+    height: 45px;
+    background: #111;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.discount-field input {
+    width: 100%;
+    height: 45px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-style: italic;
+}
+
+@media screen and (max-width:1024px){
+    .container {
+        width: 90%;
+        flex-direction: column;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.4rem;
+    }
+    .title {
+        font-size: 2rem;
+    }
+    .left {
+        width: 58%;
+    }
+    .right {
+        width: 38%;
+    }
+    .pay-btn {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width:768px){
+h1 {
+        font-size: 1.8rem;
+    }
+    
+    
+    p, label {
+        font-size: 1rem;
+    }
+    .container {
+        max-width: 100%;
+        padding: 0 10px;
+        flex-direction: column;
+    }
+    .left,
+    .right {
+        width: 100% !important;
+        max-width: 100%;
+        float: none;
+    }
+    
+    .row {
+        flex-direction: column;
+    }
+    .container input, select {
+        font-size: 1rem;
+        padding: 12px;
+    }
+    .pay-btn {
+        font-size: 1.2rem;
+        padding: 16px;
+    }
+    .payment-method button {
+        font-size: 1rem;
+        padding: 14px;
+    }
+    .item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .item strong {
+        font-size: 1.2rem;
+        margin-top: 5px;
+    }
+    .total {
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/checkoutStyle.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <!--HEADER-->
+    <header class="header">
+        <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img srcset="images/Ikonice.assignment03/black_modern_MS_logo.png,
+                images/Ikonice.assignment03/black_modern_MS_logo_1024.png,
+                images/Ikonice.assignment03/black_modern_MS_logo_768.png"
+                sizes="(max-width:1900px) 1900px,
+                (max-width:1024px) 1024px,
+                (max-width:768px) 768px" src="images/Ikonice.assignment03/black_modern_MS_logo.png" alt="logo sajta"></a>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#sale" class="sale">Sale!</a></li>
+            </ul>
+        </div>
+        <div class="header-right">
+            <div class="search">
+                <img src="images/Ikonice.assignment03/search_icon.png" alt="search icon">
+                <span>Search</span>
+            </div>
+            <span class="icons"><a href="checkout.html"><img src="images/Ikonice.assignment03/cart_logo.png" alt="ikonica za kupovinu"></a></span>
+            <span class="icons"><a href="login.html"><img src="images/Ikonice.assignment03/user_logo.png" alt="user ikonica"></a></span>
+
+        </div>
+        </div>
+    </header>
+    <!--KRAJ HEADERA-->
+    <div class="breadcrumbs">
+        <span class="crumb">Home</span>
+        <span class="crumb-sep">›</span>
+        <span class="crumb">Cart</span>
+        <span class="crumb-sep">›</span>
+        <span class="crumb">Checkout</span>
+    </div>
+
+    <!--NASLOV-->
+    <h1 class="naslov">Checkout</h1>
+    <!--MAIN-->
+    <div class="container">
+        <div class="left">
+            <h2>Shipping information</h2>
+            <div class="box">
+                
+                <div class="row">
+                    <div class="field">
+                        <label for="first-name">First Name</label>
+                        <input type="text" name="first-name" id="first-name">
+                    </div>
+                    <div class="field">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" name="last-name" id="last-name">
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="address">Address</label>
+                    <input type="text" name="address" id="address">
+                </div>
+                <div class="field">
+                    <label for="apartment">Apartment, suite, etc.</label>
+                    <input type="text" name="apartment" id="apartment">
+                </div>
+                <div class="row">
+                    <div class="field">
+                        <label for="country">Country</label>
+                        <select id="country"></select>
+                    </div>
+                    <div class="field">
+                        <label for="city">City</label>
+                        <select id="city"></select>
+                    </div>
+                    <div class="field">
+                        <label for="zipcode">Zipcode</label>
+                        <select id="zipcode"></select>
+                    </div>
+                </div>
+                <div class="checkbox">
+                    <label>
+                    <input type="checkbox">
+                    Save contact information
+                </label>
+                </div>
+            </div>
+
+                <h2>Payment information</h2>
+                <div class="box">
+
+                    <div class="payment-method">
+                        <button class="paypal"><img src="images/Ikonice.assignment03/PayPal.png"
+                                alt="paypal"></button>
+                       <button class="cash">Cash</button>
+                    </div>
+                    <div class="field">
+                        <label for="cardholder">Cardholder name</label>
+                        <input type="text" name="cardholder" id="cardholder">
+                    </div>
+                    <div class="field">
+                        <label for="card-number">Card number</label>
+                        <input type="text" name="card-number" id="card-number">
+                    </div>
+                    <div class="row">
+                        <div class="field">
+                            <label for="month">Month</label>
+                            <select id="month"></select>
+                        </div>
+                        <div class="field">
+                            <label for="year">Year</label>
+                            <select id="year"></select>
+                        </div>
+                        <div class="field">
+                            <label for="cvc">CVC</label>
+                            <input type="text" id="cvc" maxlength="3">
+                        </div>
+                    </div>
+                    <input type="button" value="Pay" class="pay-btn">
+                </div>
+            </div>
+
+        
+        <div class="right">
+
+            <h2>Review your Cart</h2>
+
+            <div class="cart">
+                <div class="item">
+                    <img src="images/Ikonice.assignment03/blazer.webp" alt="blazet">
+                    <div class="info">
+                        <p>Blazer</p>
+                        <span>Size: S</span>
+                    </div>
+                    <strong>$95</strong>
+                </div>
+
+                <div class="item">
+                    <img src="images/Ikonice.assignment03/sweater.jpg" alt="dzemper">
+                    <div class="info">
+                        <p>Chunky Knit Sweater</p>
+                        <span>Size: M</span>
+                    </div>
+                    <strong>$55</strong>
+                </div>
+
+                <div class="item">
+                    <img src="images/Ikonice.assignment03/mesh_sleeve_bluse.jpg" alt="bluza">
+                    <div class="info">
+                        <p>Mesh Sleeve Bluse</p>
+                        <span>Size: S</span>
+                    </div>
+                    <strong>$32</strong>
+                </div>
+
+                <div class="item">
+                    <img src="images/Ikonice.assignment03/retro_jeans.webp" alt="retro pantalone">
+                    <div class="info">
+                        <p>Retro Jeans</p>
+                        <span>Size: S</span>
+                    </div>
+                    <strong>$70</strong>
+                </div>
+                
+                <div class="order-summary">
+                    <h3>Order Summary</h3>
+                    
+                    <div class="summary-box">
+                    <span>Subtotal</span>
+                    <strong>$252</strong>
+                    
+                </div>
+                <div class="summary-box">
+                    <span>Discount</span>
+                    <strong>0</strong>
+                </div>
+                </div>
+
+                <div class="total">
+                    <span>Total</span>
+                    <strong>$252</strong>
+                </div>
+
+                <div class="discount-row">
+                    <div class="discount-field">
+                        <input type="text" name="promo-input" id="promo-input" placeholder="ADD PROMO CODE">
+                    </div>
+                    <div class="discount-field">
+                    <button class="apply" onclick="validateAndNotify()">Apply</button>
+                    </div>
+                </div>
+
+                
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    <!--FOOTER-->
+    <footer class="footer">
+        <div class="footer-wrap">
+        <div class="footer-links">
+
+            <div class="footer-column">
+                <h3>SHOP</h3>
+                <ul>
+                    <li>Dresses</li>
+                    <li>Jackets</li>
+                    <li>Skirts</li>
+                    <li>Shoes &amp; Bags</li>
+                    <li>Gift Cards</li>
+                    <li>Sales &amp; Offers</li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>INFORMATION</h3>
+                <ul>
+                    <li>About</li>
+                    <li>Terms and Conditions</li>
+                    <li>Privacy Policy</li>
+                    <li>Delivery and Return</li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>CUSTOMER SUPPORT</h3>
+                <ul>
+                    <li>Contact</li>
+                    <li>Help</li>
+                    <li>FAQ</li>
+                </ul>
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+            <p>Designed and developed by: <strong>ITAcademy</strong></p>
+
+            <div class="social-icons">
+                <span><img src="images/Ikonice.assignment03/facebook.png"
+                        alt="ikonica facebook"></span>
+                <span><img src="images/Ikonice.assignment03/instagram.png"
+                        alt="ikonica instagram"></span>
+                <span><img src="images/Ikonice.assignment03/tik-tok.png"
+                        alt="ikonica tik-tok"></span>
+            </div>
+        </div>
+        </div>
+
+    </footer>
+
+    <!--KRAJ FOOTERA-->
+    <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>-->
+</body>
+
+</html>
